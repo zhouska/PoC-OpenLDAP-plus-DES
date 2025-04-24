@@ -48,7 +48,7 @@
         name: 
           - slapd
           - ldap-utils
-        state: present
+        state: latest
         update_cache: yes
 
     - name: Ensure slapd is started

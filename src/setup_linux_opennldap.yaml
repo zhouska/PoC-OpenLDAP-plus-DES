@@ -4,7 +4,7 @@
   become: yes
   vars:
     domain: "example.com"
-    password: ""
+    password: "Password123!"
     ldap_base: "dc=example,dc=com"
     ldap_users: "ou=People"
     ldap_groups: "ou=Groups"
@@ -48,7 +48,7 @@
         name: 
           - slapd
           - ldap-utils
-        state: present
+        state: latest
         update_cache: yes
 
     - name: Ensure slapd is started
